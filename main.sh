@@ -1,3 +1,5 @@
+# Managed by https://github.com/3sd/ansible/tree/master/roles/zsh
+
 # History
 HISTFILE=~/.histfile
 HISTSIZE=10000000
@@ -26,6 +28,9 @@ WORDCHARS='*?[]~=&;!#$%^(){}<>'
 # Prompt
 PROMPT="%B%F{$PROMPT_COLOUR}%n@%m %F{111}%~%b%f "
 RPROMPT="%B%F{$PROMPT_COLOUR}%D{%a %e %b %H:%M:%S}%f%b"
+
+# autosuggestions
+source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Aliases
 alias a="atom -a"
