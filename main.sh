@@ -31,6 +31,7 @@ RPROMPT="%B%F{$PROMPT_COLOUR}%D{%a %e %b %H:%M:%S}%f%b"
 # autosuggestions
 source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+<<<<<<< HEAD
 # Search history substring
 source ~/.zsh_plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 HISTORY_SUBSTRING_SEARCH_FUZZY=TRUE
@@ -77,6 +78,8 @@ HISTORY_SUBSTRING_SEARCH_FUZZY=TRUE
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 echo mikey
+=======
+>>>>>>> 66ce9444c1a495055d5eba487bdf8ec55093645f
 # Aliases
 alias a="atom -a"
 alias grep='grep --color'
