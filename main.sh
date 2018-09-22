@@ -7,6 +7,7 @@ SAVEHIST=10000000
 setopt incappendhistory sharehistory
 
 # Completions
+fpath=(~/.zsh_plugins/zsh-completions/src $fpath)
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
@@ -48,6 +49,12 @@ RPROMPT="%B%F{$PROMPT_COLOUR}%D{%a %e %b %H:%M:%S}%f%b"
 
 # Use globs with rsync and ssh, etc.
 setopt nonomatch
+
+# cd
+CDPATH=".:$HOME/bk/build:/var/www:$HOME/src:$HOME/Projects"
+setopt autopushd
+setopt cdablevars
+
 
 # Aliases
 alias a="atom -a"
