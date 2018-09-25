@@ -58,6 +58,8 @@ setopt cdablevars
 # Path
 PATH=$PATH:$HOME/.local/bin
 
+# Autojump
+. /usr/share/autojump/autojump.sh
 
 # Aliases
 alias ls='ls --color'
