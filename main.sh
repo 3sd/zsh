@@ -55,6 +55,9 @@ CDPATH=".:$HOME/bk/build:/var/www:$HOME/src:$HOME/Projects"
 setopt autopushd
 setopt cdablevars
 
+# Path
+PATH=$PATH:$HOME/.local/bin
+
 
 # Aliases
 alias ls='ls --color'
