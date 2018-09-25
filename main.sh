@@ -57,9 +57,11 @@ setopt cdablevars
 
 
 # Aliases
-alias a="atom -a"
-alias grep='grep --color'
-alias hosts='sudo vim /etc/hosts'
 alias ls='ls --color'
+alias grep='grep --color'
 alias rgrep='grep --recursive --line-number --color'
+alias o='xdg-open'
+alias a="atom -a"
+
+alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
