@@ -55,11 +55,11 @@ CDPATH=".:$HOME/bk/build:/var/www:$HOME/src:$HOME/Projects"
 setopt autopushd
 setopt cdablevars
 
-# Path
+# Paths
 PATH=$PATH:$HOME/.local/bin
-
-# Autojump
 . /usr/share/autojump/autojump.sh
+
+hash -d b=~/bk/build
 
 # Aliases
 alias ls='ls --color'
