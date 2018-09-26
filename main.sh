@@ -68,7 +68,17 @@ alias rgrep='grep --recursive --line-number --color'
 alias o='xdg-open'
 alias a="atom -a"
 
+alias t='task'
+alias ta='task add'
 alias ta="task add"
+alias tatf='task entry.after:now-14days'
+alias tw=timew
+alias twd='timew day'
+alias tws='timew summary :ids'
+alias twsy='tws yesterday to now'
+alias twt='timew transfer from yesterday'
+alias tww='timew week'
 
 alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
+alias sync-zsh="git -C ~/src/zsh push;git -C ~/.zsh pull"
