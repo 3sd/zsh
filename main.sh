@@ -56,7 +56,7 @@ setopt autopushd
 setopt cdablevars
 
 # Paths
-PATH=$PATH:$HOME/.local/bin
+PATH=$HOME/.local/bin:$PATH
 . /usr/share/autojump/autojump.sh
 
 hash -d b=~/bk/build
