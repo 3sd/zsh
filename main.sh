@@ -68,6 +68,13 @@ alias rgrep='grep --recursive --line-number --color'
 alias o='xdg-open'
 alias a="atom -a"
 
+# civicrm-buildkit-docker
+alias bk='docker-compose --file /home/michael/bk/docker-compose.yml'
+alias bku='docker-compose --file /home/michael/bk/docker-compose.yml up -d'
+alias bkc='docker-compose --file /home/michael/bk/docker-compose.yml exec -u buildkit civicrm'
+alias bkb='docker-compose --file /home/michael/bk/docker-compose.yml exec -u buildkit civicrm bash'
+
+## taskwarrior
 alias t='task'
 alias ta='task add'
 alias ta="task add"
