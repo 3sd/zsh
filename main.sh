@@ -70,10 +70,11 @@ alias o='xdg-open'
 alias a="atom -a"
 
 # civicrm-buildkit-docker
-alias bk='docker-compose --file /home/michael/bk/docker-compose.yml'
-alias bku='docker-compose --file /home/michael/bk/docker-compose.yml up -d'
-alias bkc='docker-compose --file /home/michael/bk/docker-compose.yml exec -u buildkit civicrm'
-alias bkb='docker-compose --file /home/michael/bk/docker-compose.yml exec -u buildkit civicrm bash'
+alias bk='docker-compose --file $HOME/bk/docker-compose.yml'
+alias bku='docker-compose --file $HOME/bk/docker-compose.yml up -d'
+alias bkc='docker-compose --file $HOME/bk/docker-compose.yml exec -u buildkit civicrm'
+alias bkb='docker-compose --file $HOME/bk/docker-compose.yml exec -u buildkit civicrm bash'
+alias sb='docker-compose --file $HOME/src/scout/docker-compose.yml exec -u buildkit scout  bash'
 
 ## taskwarrior
 alias t='task'
