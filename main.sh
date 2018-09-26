@@ -60,6 +60,7 @@ PATH=$PATH:$HOME/.local/bin
 . /usr/share/autojump/autojump.sh
 
 hash -d b=~/bk/build
+hash -d bk=~/bk
 
 # Aliases
 alias ls='ls --color'
