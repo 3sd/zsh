@@ -56,7 +56,7 @@ setopt autopushd
 setopt cdablevars
 
 # Paths
-PATH=$HOME/.local/bin:$PATH
+PATH=$HOME/.npm-packages/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
 . /usr/share/autojump/autojump.sh
 
 hash -d b=~/bk/build
