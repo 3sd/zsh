@@ -50,10 +50,10 @@ RPROMPT="%B%F{$PROMPT_COLOUR}%D{%a %e %b %H:%M:%S}%f%b"
 # Use globs with rsync and ssh, etc.
 setopt nonomatch
 
-# cd
-CDPATH=".:$HOME/bk/build:/var/www:$HOME/src:$HOME/Projects"
-setopt autopushd
-setopt cdablevars
+# # cd
+# CDPATH=".:$HOME/bk/build:/var/www:$HOME/src:$HOME/Projects"
+# setopt autopushd
+# setopt cdablevars
 
 # Paths
 PATH=$HOME/.npm-packages/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
