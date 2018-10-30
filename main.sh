@@ -68,7 +68,7 @@ alias grep='grep --color'
 alias rgrep='grep --recursive --line-number --color'
 alias o='xdg-open'
 alias a="atom -a"
-alias c="code"
+alias c="code -a"
 
 # civicrm-buildkit-docker
 alias bk='docker-compose --file $HOME/bk/docker-compose.yml'
