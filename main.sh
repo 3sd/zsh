@@ -84,8 +84,9 @@ alias tatf='task entry.after:now-14days'
 alias tw=timew
 alias twd='timew day'
 alias tws='timew summary :ids'
+alias twt='timew transfer'
 alias twsy='tws yesterday to now'
-alias twt='timew transfer from yesterday'
+alias twty='twt yesterday to now'
 alias tww='timew week'
 
 alias hosts='sudo vim /etc/hosts'
