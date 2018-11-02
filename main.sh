@@ -67,7 +67,6 @@ alias ls='ls --color'
 alias grep='grep --color'
 alias rgrep='grep --recursive --line-number --color'
 alias o='xdg-open'
-alias a="atom -a"
 alias c="code"
 
 # civicrm-buildkit-docker
