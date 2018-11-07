@@ -50,14 +50,16 @@ RPROMPT="%B%F{$PROMPT_COLOUR}%D{%a %e %b %H:%M:%S}%f%b"
 # Use globs with rsync and ssh, etc.
 setopt nonomatch
 
-# # cd
-# CDPATH=".:$HOME/bk/build:/var/www:$HOME/src:$HOME/Projects"
-# setopt autopushd
-# setopt cdablevars
+# Path navigation
 
-# Paths
 PATH=$HOME/.npm-packages/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
+
 . /usr/share/autojump/autojump.sh
+
+# cd
+DIRSTACKSIZE=0
+setopt autopushd pushdminus pushdsilent pushdtohome
+alias d='dirs -v'
 
 hash -d b=~/bk/build
 hash -d bk=~/bk
@@ -92,3 +94,4 @@ alias tww='timew week'
 alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
 alias zshSync="git -C ~/src/zsh push;git -C ~/.zsh pull;source ~/.zshrc"
+
