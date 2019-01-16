@@ -94,6 +94,7 @@ alias tww='timew week'
 
 alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
+alias wh='brave-browser "https://projects.3sd.io/time_entries/report?utf8=%E2%9C%93&criteria%5B%5D=project&set_filter=1&sort=spent_on%3Adesc&f%5B%5D=spent_on&op%5Bspent_on%5D=%3Et-&v%5Bspent_on%5D%5B%5D=57&f%5B%5D=user_id&op%5Buser_id%5D=%3D&v%5Buser_id%5D%5B%5D=me&f%5B%5D=&group_by=&t%5B%5D=hours&t%5B%5D=&columns=week&criteria%5B%5D="'
 alias zshSync="git -C ~/src/zsh push;git -C ~/.zsh pull;source ~/.zshrc"
 
 # Handy environment variables
