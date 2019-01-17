@@ -54,6 +54,9 @@ setopt nonomatch
 
 PATH=$HOME/.npm-packages/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
 
+# Add linux brew to path (linux brew needs to be installed for this to make sense)
+PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+
 . /usr/share/autojump/autojump.sh
 
 # cd
