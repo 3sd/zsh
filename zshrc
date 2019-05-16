@@ -1,13 +1,17 @@
 # Managed by https://github.com/3sd/ansible/tree/master/roles/zsh
 
+source ~/.zsh/vars
+
 # History
 HISTFILE=~/.histfile
 HISTSIZE=10000000 # in session
 SAVEHIST=10000000 # in $HISTFILE
 setopt SHARE_HISTORY # share history between terminals
 
+# TODO: review and document/comment from here 
+
 # Completions
-fpath=(~/.zsh_plugins/zsh-completions/src $fpath)
+fpath=(~/.zsh/plugins/zsh-completions/src $fpath)
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
@@ -21,16 +25,16 @@ bindkey "^[[3~" delete-char-or-list
 WORDCHARS='*?[]~=&;!#$%^(){}<>'
 
 # Automatic suggestions
-source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Search history substring
-source ~/.zsh_plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 HISTORY_SUBSTRING_SEARCH_FUZZY=TRUE
 bindkey '^[OA' history-substring-search-up
 bindkey '^[OB' history-substring-search-down
 
 # Git prompt
-source ~/.zsh_plugins/zsh-git-prompt/zshrc.sh
+source ~/.zsh/plugins/zsh-git-prompt/zshrc.sh
 ZSH_THEME_GIT_PROMPT_PREFIX=" %B%F{212}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=""
@@ -98,11 +102,3 @@ alias tww='timew week'
 alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
 alias zshSync="git -C ~/src/zsh push;git -C ~/.zsh pull;source ~/.zshrc"
-
-# Handy environment variables
-E=michaelmcandrew@thirdsectordesign.org
-
-# pyenv
-export PATH="/home/michael/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
