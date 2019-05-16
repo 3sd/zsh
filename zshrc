@@ -2,9 +2,9 @@
 
 # History
 HISTFILE=~/.histfile
-HISTSIZE=10000000
-SAVEHIST=10000000
-setopt incappendhistory sharehistory
+HISTSIZE=10000000 # in session
+SAVEHIST=10000000 # in $HISTFILE
+setopt SHARE_HISTORY # share history between terminals
 
 # Completions
 fpath=(~/.zsh_plugins/zsh-completions/src $fpath)
