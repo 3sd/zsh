@@ -46,6 +46,16 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_CONFLICTS="%B%F{196}%{x%G%}"
 ZSH_THEME_GIT_PROMPT_STAGED="%B%F{70}%{s%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%B%F{196}%{+%G%}"
+ZSH_THEME_GIT_PROMPT_HASH_PREFIX=":"
+
+ZSH_THEME_GIT_PROMPT_STASHED="%B%F{208}%{s%G%}"
+ZSH_THEME_GIT_PROMPT_LOCAL="%B%F{70} local "
+
+# The following are not set (and are maybe a bit unecessary?
+# ZSH_THEME_GIT_PROMPT_UPSTREAM_FRONT=" {%{$fg[blue]%}"
+# ZSH_THEME_GIT_PROMPT_UPSTREAM_END="%{${reset_color}%}}"
+# ZSH_THEME_GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}|MERGING%{${reset_color}%}"
+# ZSH_THEME_GIT_PROMPT_REBASE="%{$fg_bold[magenta]%}|REBASE%{${reset_color}%} "
 
 # Prompt
 PROMPT='%B%F{$PROMPT_COLOUR}%n@%m %F{111}%~$(git_super_status)%f%b '
