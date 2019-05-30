@@ -68,9 +68,6 @@ setopt nonomatch
 
 PATH=$HOME/.npm-packages/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
 
-# Add linux brew to path (linux brew needs to be installed for this to make sense)
-PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
-
 . /usr/share/autojump/autojump.sh
 
 # cd
@@ -95,19 +92,6 @@ alias bku='docker-compose --file $HOME/bk/docker-compose.yml up -d'
 alias bkc='docker-compose --file $HOME/bk/docker-compose.yml exec -u buildkit civicrm'
 alias bkb='docker-compose --file $HOME/bk/docker-compose.yml exec -u buildkit civicrm bash'
 alias sb='docker-compose --file $HOME/src/scout/docker-compose.yml exec -u buildkit scout  bash'
-
-## taskwarrior
-alias t='task'
-alias ta='task add'
-alias ta="task add"
-alias tatf='task entry.after:now-14days'
-alias tw=timew
-alias twd='timew day'
-alias tws='timew summary :ids'
-alias twt='timew transfer'
-alias twsy='tws yesterday to now'
-alias twty='twt yesterday to now'
-alias tww='timew week'
 
 alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
