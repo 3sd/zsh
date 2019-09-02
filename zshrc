@@ -61,8 +61,8 @@ ZSH_THEME_GIT_PROMPT_LOCAL="%B%F{70} local "
 PROMPT='%B%F{$PROMPT_COLOUR}%n@%m %F{111}%~$(git_super_status)%f%b '
 RPROMPT="%B%F{$PROMPT_COLOUR}%D{%a %e %b %H:%M:%S}%f%b"
 
-# Use globs with rsync and ssh, etc.
-setopt nonomatch
+# Globbing
+setopt extendedglob
 
 # Path navigation
 
