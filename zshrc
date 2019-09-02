@@ -96,3 +96,9 @@ alias sb='docker-compose --file $HOME/src/scout/docker-compose.yml exec -u build
 alias hosts='sudo vim /etc/hosts'
 alias wirt='chromium --new-window "https://www.metoffice.gov.uk/public/weather/will-it-rain-today/#?tab=map&map=Rainfall&zoom=9&lon=-3.50&lat=50.93&fcTime=1516572000"'
 alias zshSync="git -C ~/src/zsh push;git -C ~/.zsh pull;source ~/.zshrc"
+
+# pyenv - move this somewhere more appropriate
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
